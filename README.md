@@ -15,20 +15,20 @@ Data inputs to these functions:
 1) term_vecs_path: path to an RData structure "term_vecs_mat" that is a data.frame n x (d + 1), containing the n word embeddings of length d. The first column is the term and the remaining columns are the embeddings.
 2) term_freq_path: path to an RData structure "term_freq" that contains the frequency of terms, such as inverse document frequency. The first column is the term and the remaining columns are different frequency measures.
 3) An important data structure used throughout this code is the acronym_list, which is a list with an entry for each acronym being disambiguated (RA, MS, and MI in the referenced article). Within each, acronym list item is a sub-list with the following values
-  1) acronym: the acronym, e.g. "RA"
-  2) longform: the target longform, e.g. "rheumatoid arthritis"
-  3) main cui: the main CUI associated with the longform, i.e. C0003873
-  4) phecode: the phecode (from the Josh Denny mapping) associated with the main CUI, i.e. 714_1
-  5) phecode_list: the list of phecodes associated with the acronym used in the RF-CUI-ICD algorithm
-  6) acronym_cui: the cui code used to indicate acronym counts in the dataset
-  7) longform_cui: the cui code used to indicate longform counts in the dataset
-  8) icd_codes: the list of ICD codes associated with the longform
-  9) filter_pos_patients: the list of patient identifiers that pass the filter for the study (this is specific to the Link et. al paper)
-  10) ICD_pos_vector: the embedding for the target sense created by using positive ICD silver-standard labels
-  11) ICD_neg_vector: the embedding for NOT the  target sense created by using negative ICD silver-standard labels
-  12) longform_vector: the embedding for the  target sense using the longform contexts
-  13) non_filter_ratio: the ratio of patients not passing the filter to ones who do pass (used for weighting results, again this is likely specific to the Link et. al paper)
-  14) prevalences: list of the estimated prevalences of the acronym target sense class
+  3a) acronym: the acronym, e.g. "RA"
+  3b) longform: the target longform, e.g. "rheumatoid arthritis"
+  3c) main cui: the main CUI associated with the longform, i.e. C0003873
+  3d) phecode: the phecode (from the Josh Denny mapping) associated with the main CUI, i.e. 714_1
+  3e) phecode_list: the list of phecodes associated with the acronym used in the RF-CUI-ICD algorithm
+  3f) acronym_cui: the cui code used to indicate acronym counts in the dataset
+  3g) longform_cui: the cui code used to indicate longform counts in the dataset
+  3h) icd_codes: the list of ICD codes associated with the longform
+  3i) filter_pos_patients: the list of patient identifiers that pass the filter for the study (this is specific to the Link et. al paper)
+  3j) ICD_pos_vector: the embedding for the target sense created by using positive ICD silver-standard labels
+  3k) ICD_neg_vector: the embedding for NOT the  target sense created by using negative ICD silver-standard labels
+  3l) longform_vector: the embedding for the  target sense using the longform contexts
+  3m) non_filter_ratio: the ratio of patients not passing the filter to ones who do pass (used for weighting results, again this is likely specific to the Link et. al paper)
+  3n) prevalences: list of the estimated prevalences of the acronym target sense class
 
 
 
