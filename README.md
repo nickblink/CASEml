@@ -7,9 +7,10 @@ The two files containing code are
 
 1) Applying_alacarte: Contains the code to run alacarte, a process to de-noise word vectors (refer to https://arxiv.org/abs/1805.05388)
 2) CASEml_functions: Contains all the functions used for running CASEml. There are a lot of helper functions in here, but the main workhorse functions are:
-  a) "CASEml_wrapper": which runs the CASEml algorithm
-  b) "run_CUI_ICD_model": which runs the random forest ICD model using visit-level information
-  c) "get_acronym_context_longform_similarity": which runs the wordvec-score model using contextual information of the acronym to predict its meaning.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a) "CASEml_wrapper": which runs the CASEml algorithm
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  b) "run_CUI_ICD_model": which runs the random forest ICD model using visit-level information
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c) "get_acronym_context_longform_similarity": which runs the wordvec-score model using contextual information of the acronym to predict its meaning.
 
 Data inputs to these functions:
 1) term_vecs_path: path to an RData structure "term_vecs_mat" that is a data.frame n x (d + 1), containing the n word embeddings of length d. The first column is the term and the remaining columns are the embeddings.
