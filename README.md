@@ -16,7 +16,7 @@ Data inputs to these functions:
 2) term_freq_path: path to an RData structure "term_freq" that contains the frequency of terms, such as inverse document frequency. The first column is the term and the remaining columns are different frequency measures.
 3) An important data structure used throughout this code is the acronym_list, which is a list with an entry for each acronym being disambiguated (RA, MS, and MI in the referenced article). Within each, acronym list item is a sub-list with the following values
 
-  3a) acronym: the acronym, e.g. "RA"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp  3a) acronym: the acronym, e.g. "RA"
   3b) longform: the target longform, e.g. "rheumatoid arthritis"
   3c) main cui: the main CUI associated with the longform, i.e. C0003873
   3d) phecode: the phecode (from the Josh Denny mapping) associated with the main CUI, i.e. 714_1
